@@ -1,0 +1,16 @@
+{
+  "name": "express_mongodb",
+  "version": "1.0.0",
+  "description": "api crud mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index"
+  },
+  "author": "yatinah",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0",
+    "nodemon": "^2.0.15"
+  }
+}
