@@ -4,12 +4,14 @@
   "description": "api crud mongodb",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index"
+    "start": "nodemon index.js"
   },
   "author": "yatinah",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^6.3.0",
     "nodemon": "^2.0.15"
   }
