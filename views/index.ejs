@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('./partials/header.ejs')%>
+<body>
+    <%-include('./partials/nav.ejs')%>
+    <main>
+        <!-- <form  class="Cari" onSubmit={this.state.submit}>
+            <input class="cari" name="keyword" value={this.state.isi} onChange={this.handleInput} placeholder="Masukkan kata kunci"/>
+            <FontAwesomeIcon icon={faMagnifyingGlass} class='cri'/>
+        </form> -->
+        <form  class="Cari">
+            <input class="cari" name="keyword" placeholder="Masukkan kata kunci"/>
+            <!-- <FontAwesomeIcon icon={faMagnifyingGlass} class='cri'/> -->
+        </form>
+
+        <div class='insp'>
+            <h3>Kisah Inspirasi</h3>
+            <div class="gridx">
+                <div class="card">
+                    <div class='card-body'>
+                            <div class='kategori'> <span>Kategori</span></div>
+                            <div class='keterangan'>
+                                <h4>Tukang Kebun</h4>
+                                <p>lorem ipsum color de amet color de colrejdu 
+                                ttrurejuwe ipokuytu</p>
+                                <div class='btn'>  <a href="" class='btn'>Read More</a></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wStory">
+            <div class="desc">
+                <h3>Do you have your own inspiration stories and wanna join with us?</h3>
+                <p>To write your own stories, you have to join the news letter
+                I write monthly emails full of real-world web development tips and resources.
+                No spam, unsubscribe at any time</p>
+            </div>
+            <form  class="write">
+                <input class="cari" name="keyword" />
+                <button>Subscribe</button>
+            </form>
+        </div>
+
+    </main>
+  
+    <%-include('./partials/footer.ejs')%>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    background-color: rgb(218, 230, 230);
+  }
+  
+  nav{
+    background-color: rgb(19, 38, 207);
+    color:white;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul{
+    display: flex;
+    list-style-type: none;
+  
+  }
+  ul li{
+    margin-left: 20px;
+  }
+  main{
+    margin:  40px;
+    height: 100vh;
+    background-color: white;
+   }
+  .Cari{
+     position: absolute;
+     top: 15%;
+     left: 20%;
+     right: 20%;
+     width: 60%;
+     border-radius: 10px;
+     background-color: white;
+     border: 2px solid blue;
+   }
+  .Cari input{
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+    height:fit-content;
+    margin-left: 10px;
+  }
+  .cri{
+    margin-left: 10px;
+  }
+  
+  /* card */
+  .insp{
+    width: 100%;
+    padding: 30px;
+  }
+  .insp h3{
+    text-align: center;
+  }
+  .card{
+    width: 80%;
+    /* border: 1px solid black;  */
+    box-shadow: 0px 2px 1px 1px rgb(119, 118, 118);
+  }
+  .card img{
+    width: 100%;
+    height: 30vh;
+  }
+  .keterangan{
+    font-size: 10px;
+    padding: 0 10px 5px 10px;
+    text-align: justify;
+  }
+  .btn{
+    background-color: rgb(148, 148, 255);
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+  }
+  .gridx{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .kategori{
+    background-image: url('./youssef-naddam-iJ2IG8ckCpA-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: antiquewhite;
+    width: 100%;
+    height: 30vh;
+  }
+  .kategori span{
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(98, 75, 119);
+    position: relative;
+    top: 10%;
+    padding: 3px 10px;
+  }
+  .wStory{
+    text-align: center;
+    padding: 20px 50px;
+  }
+  .wStory>.desc{
+    font-size: 13px;
+  }
+  
