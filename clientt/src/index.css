@@ -7,21 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0;
-  background-color: rgb(218, 230, 230);
-}
 
 nav{
   background-color: rgb(19, 38, 207);
@@ -30,14 +15,21 @@ nav{
   display: flex;
   justify-content: space-between;
 }
-
-nav ul{
-  display: flex;
+ul{
   list-style-type: none;
-
+  display: flex;
 }
-ul li{
-  margin-left: 20px;
+li{
+  margin-left: 40px;
+  padding-top: 5px;
+}
+li:hover{
+  color: rgb(88, 88, 189);
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.bars{
+  display: none;
 }
 main{
   margin:  40px;
@@ -106,7 +98,7 @@ main{
   grid-template-columns: repeat(3,1fr);
 }
 .kategori{
-  background-image: url('./youssef-naddam-iJ2IG8ckCpA-unsplash.jpg');
+  /* background-image: url('./youssef-naddam-iJ2IG8ckCpA-unsplash.jpg'); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,4 +119,19 @@ main{
 }
 .wStory>.desc{
   font-size: 13px;
+}
+.bars{
+  padding-top: 20px;
+}
+@media(max-width:768px) {
+  ul{
+    display:none
+  }
+  .bars{
+    display: block;
+    cursor: pointer;
+  }
+  .bar-nav{
+    display: block;
+  }
 }
