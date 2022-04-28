@@ -1,23 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
+body{
+  color: var(--font2-color);
+}
+:root{
+  --main-color:rgb(231, 240, 250);
+  --secondary-color:#ffff;
+  --font1-color:rgb(59, 59, 59);
+  --font2-color:rgb(88, 88, 88);
+}
+h1,h2,h3,h4{
+  color: var(--font1-color);
+}
+h1{
+  font-size: 40px;
 }
 
-
 nav{
-  background-color: rgb(19, 38, 207);
-  color:white;
+  border-bottom: 1px solid grey;
+  color:rgb(71, 9, 112);
   padding: 0px 50px;
   display: flex;
   justify-content: space-between;
+ 
 }
+nav h3{
+  font-family: 'Lobster';
+}
+
 ul{
   list-style-type: none;
   display: flex;
+}
+a{
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(71, 9, 112);
 }
 li{
   margin-left: 40px;

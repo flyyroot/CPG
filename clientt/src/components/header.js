@@ -25,8 +25,6 @@ function Headers(){
             <Link to="/partner">
             <li>Find Partner</li>
             </Link>
-         
-         
        </ul>
        <h4><FontAwesomeIcon icon={['fa','fa-bars']} /></h4>
        <FontAwesomeIcon icon={faBars} className='bars' onClick={()=>setBar({display:true})}/>

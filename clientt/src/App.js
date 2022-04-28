@@ -1,19 +1,18 @@
 import React from 'react';
 import Header from './components/header';
-import './index.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Main from './pages/Inspirasi';
 import Inspirasi from './pages/Inspirasi';
 import Mentor from './pages/mentor';
 import Partner from './pages/partner';
 import Community from './pages/community';
 import Error from './pages/error';
+import Home from './pages/home';
 function App() {
   return (
       <Router>
           <Header/>
           <Routes>
-            <Route path="/" exact element={Home}/>
+            <Route path="/" exact element={<Home/>}/>
             <Route path="/inspirasi" element={<Inspirasi/>}/>
             <Route path="/mentor" element={<Mentor/>}/>
             <Route path="/partner/:username" element={<Partner/>}/>
@@ -24,11 +23,5 @@ function App() {
        
   );
 }
-function Home(){
-  return(
-    <>
-    <h2>Hello</h2>
-    </>
-  )
-}
-export default App;
+export default App
+
