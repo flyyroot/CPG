@@ -102,7 +102,7 @@ function Inspirations(){
 function Connect(){
     return(
         <section className='connected'>
-                   
+            
         </section>
     )
 }
