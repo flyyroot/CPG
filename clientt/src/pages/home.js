@@ -1,8 +1,9 @@
 import image from '../components/images'
-import '../App.css';
 import React, { Component } from 'react'
+import {useNavigate} from "react-router-dom"
 
 function Home1() {
+    const auths = useNavigate()
     return (
           <section className='sh'>
               <div className="sub-sh1">
@@ -13,7 +14,7 @@ function Home1() {
                   <p>We are non profit organization to help people who have desire to make something happen
                       because nothing is impossible!
                   </p>
-                  <button>Join with us!</button>
+                  <button onClick={()=>auths("/")}>Join with us!</button>
               </div>
           </section>
     )
@@ -99,13 +100,13 @@ function Inspirations(){
     )
 }
 
-function Connect(){
-    return(
-        <section className='connected'>
+// function Connect(){
+//     return(
+//         <section className='connected'>
             
-        </section>
-    )
-}
+//         </section>
+//     )
+// }
 
 export default class Home extends Component {
     render() {

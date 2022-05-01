@@ -7,6 +7,7 @@ import Partner from './pages/partner';
 import Community from './pages/community';
 import Error from './pages/error';
 import Home from './pages/home';
+import Auth from './pages/auth';
 function App() {
   return (
       <Router>
@@ -17,6 +18,7 @@ function App() {
             <Route path="/mentor" element={<Mentor/>}/>
             <Route path="/partner/:username" element={<Partner/>}/>
             <Route path="/community" element={<Community/>}/>
+            <Route path="/auth" element={<Auth/>}/>
             <Route path="*" element={<Error/>} />
           </Routes>
       </Router>

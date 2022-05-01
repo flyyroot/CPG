@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
-body{
-  color: var(--font2-color);
-}
 :root{
-  --main-color:rgb(231, 240, 250);
+  --main-color:rgb(243, 243, 243);
   --secondary-color:#ffff;
+  --third-color:grey;
+  --black-color: black;
+  --blue-color: blue; 
+  --purple-color:rgb(71, 9, 112);
+  --purple-two :rgb(88, 88, 189);
+  --purple-three: blueviolet;
   --font1-color:rgb(59, 59, 59);
   --font2-color:rgb(88, 88, 88);
+}
+body{
+  color: var(--font2-color);
 }
 h1,h2,h3,h4{
   color: var(--font1-color);
@@ -16,17 +22,17 @@ h1{
 }
 
 nav{
-  border-bottom: 1px solid grey;
-  color:rgb(71, 9, 112);
+  border-bottom: var(--third-color);
+  color:var(--purple-color);
   padding: 0px 50px;
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
  
 }
 nav h3{
   font-family: 'Lobster';
 }
-
 ul{
   list-style-type: none;
   display: flex;
@@ -34,15 +40,15 @@ ul{
 a{
   text-decoration: none;
   font-weight: 400;
-  color: rgb(71, 9, 112);
+  color: var(--purple-color)
 }
 li{
   margin-left: 40px;
   padding-top: 5px;
 }
 li:hover{
-  color: rgb(88, 88, 189);
-  border-bottom: 1px solid black;
+  color: var(--purple-two);
+  border-bottom: 1px solid var(--black-color);
   cursor: pointer;
 }
 .bars{
@@ -51,7 +57,7 @@ li:hover{
 main{
   margin:  40px;
   height: 100vh;
-  background-color: blue;
+  background-color: var(--blue-color);
  }
 .Cari{
    position: absolute;
@@ -60,8 +66,8 @@ main{
    right: 20%;
    width: 60%;
    border-radius: 10px;
-   background-color: white;
-   border: 2px solid blue;
+   background-color: var(--secondary-color);
+   border: 2px solid var(--blue-color);
  }
 .Cari input{
   padding: 10px;
@@ -85,8 +91,8 @@ main{
 }
 .card{
   width: 80%;
-  /* border: 1px solid black;  */
-  box-shadow: 0px 2px 1px 1px rgb(119, 118, 118);
+  /* border: 1px solid var(--black-color);  */
+  box-shadow: 0px 2px 1px 1px var(--font2-color);
 }
 .card img{
   width: 100%;
@@ -98,7 +104,7 @@ main{
   text-align: justify;
 }
 .btn{
-  background-color: rgb(148, 148, 255);
+  background-color: var(--font2-color);
   padding: 10px;
   width: 90%;
   text-align: center;
@@ -107,7 +113,7 @@ main{
 }
 .btn a{
   text-decoration: none;
-  color: black;
+  color: var(--black-color);
   font-weight: 900;
 }
 .gridx{
@@ -119,7 +125,7 @@ main{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: antiquewhite;
+  color: var(--secondary-color);
   width: 100%;
   height: 30vh;
 }
