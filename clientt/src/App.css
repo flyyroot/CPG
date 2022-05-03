@@ -110,3 +110,49 @@
   min-height: 50vh;
   text-align: center;
 }
+
+/*  */
+.card{
+  position: absolute;
+  top: 10%;
+  right:35%;
+  left:35%;
+  width: 30%;
+  height: 80%;
+  background-color: var(--purple-two);
+  border-radius: 20px;
+  padding: 0 40px;
+  
+  color: var(--main-color);
+}
+.card-header{
+  text-align: center;
+  padding: 10px;
+  color: var(--main-color);
+}
+.form-group{
+  padding: 10px 0;
+}
+input{
+  width: 90%;
+  padding: 10px;
+}
+.form-group-submit{
+  text-align: center;
+  width: 100%;
+}
+button{
+  padding: 10px;
+  width: 50%;
+  cursor: pointer;
+}
+input:focus{
+  outline:none;
+  border:1px solid green;
+}
+label{
+  font-size: 20px;
+}
+.card-footer{
+  text-align: center;
+}

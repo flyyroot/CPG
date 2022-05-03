@@ -14,7 +14,7 @@ function Home1() {
                   <p>We are non profit organization to help people who have desire to make something happen
                       because nothing is impossible!
                   </p>
-                  <button onClick={()=>auths("/")}>Join with us!</button>
+                  <button onClick={()=>auths("/auth")}>Join with us!</button>
               </div>
           </section>
     )

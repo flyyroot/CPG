@@ -17,40 +17,52 @@ const user = z.object({
 export default function Auth(){
     const {register,handleSubmit, formState:{errors}} = useForm({
         resolver:zodResolver(user)
-    })     
-    const hasilSubmit = (data)=> {console.log(data)};
+    })    
+    const onSubmit = (data)=> {console.log(data)};
     return(
         <div className="auth-grid">
             <div className="signUp">
-                <form onSubmit={handleSubmit(hasilSubmit)}>
+            <div className='card'>
+                <div className='card-header'>
+                    <h2>SIGN IN</h2>
+                </div>
+                <div className='card-body'>
+                <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='form-group'>
-                        <label name="username">username</label>
+                        <label name="username">Username</label>
                         <input className='form-control' name="username" placeholder="Masukkan username" {...register('username',{required:true})}/>
                         {errors.username?.message && <p>{errors.username?.message}</p>}
                     </div>
                     <div className='form-group'>
-                        <label name="email">email</label>
+                        <label name="email">Email</label>
                         <input className='form-control' name="email" placeholder="Masukkan email" {...register('email',{required:true})}/>
-                        {errors.email?.message} && <p>{errors.username?.message}</p>
+                        {errors.email?.message && <p>{errors.username?.message}</p>}
                     </div>
                     <div className='form-group'>
-                        <label name="no_telp">no_telp</label>
+                        <label name="no_telp">No Telepon</label>
                         <input className='form-control' name="no_telp" placeholder="Masukkan no_telp" {...register('no_telp',{required:true, valueAsNumber:true})}/>
                         {errors.no_telp?.message && <p>{errors.no_telp?.message}</p>}
                     </div>
                     <div className='form-group'>
-                        <label name="password">password</label>
+                        <label name="password">Password</label>
                         <input className='form-control' name="password" placeholder="Masukkan password" {...register('password',{required:true})}/>
                         {errors.password?.message && <p>{errors.password?.message}</p>}
                     </div>
                     <div className='form-group'>
-                        <label name="konfirmasiPassword">konfirmasiPassword</label>
+                        <label name="konfirmasiPassword">KonfirmasiPassword</label>
                         <input className='form-control' name="konfirmasiPassword" placeholder="Masukkan konfirmasiPassword" {...register('konfirmasiPassword',{required:true})}/>
                         {errors.konfirmasiPassword?.message && <p>{errors.konfirmasiPassword?.message}</p>}
                     </div>
-                    <button type="submit">Sign Up</button>
-                    
+                    <div className="form-group-submit">
+                        <button type="submit" > SUBMIT </button>
+                    </div>   
                 </form>
+             
+                </div>
+            <div className='card-footer'>
+            <p>Apakah Anda sudah mempunyai akun? <a>login</a></p>
+            </div>
+        </div>
             </div>
 
         </div>
